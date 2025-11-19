@@ -201,7 +201,7 @@ export default function Dashboard({ transactions }: DashboardProps) {
                   cy="50%"
                   outerRadius={100}
                   label={({ name, percent }) =>
-                    `${name} (${(percent * 100).toFixed(0)}%)`
+                    `${name} (${((percent || 0) * 100).toFixed(0)}%)`
                   }
                   labelLine={false}
                 >
