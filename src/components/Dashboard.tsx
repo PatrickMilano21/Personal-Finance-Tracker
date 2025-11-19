@@ -200,8 +200,8 @@ export default function Dashboard({ transactions }: DashboardProps) {
                   cx="50%"
                   cy="50%"
                   outerRadius={100}
-                  label={({ category, percent }) =>
-                    `${category} (${(percent * 100).toFixed(0)}%)`
+                  label={({ name, percent }) =>
+                    `${name} (${(percent * 100).toFixed(0)}%)`
                   }
                   labelLine={false}
                 >
